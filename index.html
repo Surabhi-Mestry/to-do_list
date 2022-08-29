@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.svg">
+    <title>Notes</title>
+</head>
+<body>
+    <div id="main_page">
+        <h2><img src="icon.svg"> Welcome to Notes!</h2>
+        <div id="container">
+           
+        </div>
+        <!-- <h3 id="sad_txt" class="hidden">No Tasks :(</h3> -->
+        <button id="add_btn" onclick="hide();clear_txt()">+</button>
+    </div>
+    <div id="task_edit_page">
+        <div id="dabba" class="show">
+            <div id="nav">
+                <button id="back_btn" onclick="hide();">BACK</button>
+            </div>
+            <div id="title">
+                <input id="title_txt" type="text" placeholder="Title">
+            </div>
+            <div id="space"></div>
+            <div id="desc">
+                <textarea name="desc_txt" id="desc_txt" cols="30" rows="10" placeholder="Description"></textarea>
+            </div>
+            <div id="pg2btns">
+                <button id="submit_btn" onclick="hide()">SUBMIT</button>
+                <button id="clear_btn" onclick="clear_txt()">CLEAR</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
